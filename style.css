@@ -100,14 +100,17 @@ header {
     transform: scale(1.1);
 }
 
-.social-icons a {
-    font-size: 2rem;
-    padding-right: 9.5rem;
-    transition: 0.6s ease;
+.social-icons {
+    display: flex;
+    justify-content: flex-start; 
+    gap: 90px; 
+    margin-top: 10px;
+    font-size: 3rem;
 }
 
 .social-icons a:hover {
     color: black;
+    transform: scale(1.1);
 }
 
 /* Circle Image Styles */
