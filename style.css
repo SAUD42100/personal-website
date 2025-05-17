@@ -226,7 +226,6 @@ header {
     justify-content: center;
 }
 
-
 @media (max-width:1023px){
     header{
         padding: 12px 20px;
@@ -256,6 +255,13 @@ header {
         flex-direction: column;
         align-items: center;
     }
+    .social-icons {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 10px;
+    }
+
 
     
 
@@ -279,5 +285,27 @@ header {
     body{
         font-size: 10px;
      
+    }
+}@media (max-width: 768px) {
+    .circle {
+        display: none; /* إخفاء الصورة عند الشاشات الصغيرة */
+    }
+
+    .footer {
+        flex-direction: column; /* ترتيب الشريط السفلي عمودي */
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer .social-icons {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 10px;
+    }
+
+    .footer .social-icons a {
+        padding-right: 0;
+        font-size: 1.8em;
     }
 }
