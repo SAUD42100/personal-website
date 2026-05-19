@@ -1,179 +1,220 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <title>موقعي الشخصي</title>
+    <title>Saud Al-Balawi</title>
 </head>
 <body>
-    <!-- Header Section -->
+ 
+    <!-- Header -->
     <header>
         <a href="#" class="logo">Bin Ouda</a>
         <nav class="navigation">
             <a href="#Skills">Skills</a>
+            <a href="#certifications">Certifications</a>
+            <a href="#courses">Courses</a>
             <a href="#contact">Contact</a>
         </nav>
     </header>
-
-    <!-- Main Section -->
+ 
+    <!-- Hero Section -->
     <section class="main">
         <div class="content">
-            <!-- Text Content -->
             <div class="text">
-                <h2>Hello, I’m Saud Albalawi<br><span>Computer Science Graduate 2024</span></h2>
-<h3>
-    I studied various fields in computer science, including:<br>
-    Software development, data structures and algorithms,<br>
-    databases, networks, operating systems,<br>
-    and user interface & user experience design.
-</h3>
-
+                <h2>Hello, I'm Saud Al-Balawi<br>
+                    <span>CS Graduate — GPA 4.54</span>
+                </h2>
+                <h3>
+                    Computer Science specialist with a passion for<br>
+                    Cybersecurity & IT infrastructure.<br>
+                    Graduated from University of Tabuk with Distinction.
                 </h3>
-               <a href="CV SAUD.pdf" class="main-btn" download>CV</a>
-               <a href="Cover.pdf" class="main-btn" download>Cover</a>
-
-
-                <!-- Social Icons -->
+                <a href="CV.SAUD.pdf" class="main-btn" download>CV</a>
+                <a href="Cover.pdf" class="main-btn" download>Cover Letter</a>
+ 
                 <div class="social-icons">
-                    <a href="https://x.com/rsaaw_?s=21&t=eMqI4AxkA01QYNo_M0W0Mw"><i class="fa-brands fa-x-twitter" style="color: black;"></i></a>
-                    <a href="https://www.linkedin.com/in/saud-al-balawi-238258340?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><i class="fab fa-linkedin" style="color: rgb(0, 34, 255);"></i></a>
-                    <a href="https://www.tiktok.com/@rsaw_?_t=8sSuHXWIo78&_r=1"><i class="fa-brands fa-tiktok" style="color: black;"></i></a>
+                   
+                    <a href="https://www.linkedin.com/in/saud-al-balawi-238258340" title="LinkedIn"><i class="fab fa-linkedin" style="color: rgb(0, 34, 255);"></i></a>
+                    
                 </div>
             </div>
-
-            <!-- Circle Images -->
+ 
             <div class="circle">
                 <img src="work2.jpg" class="active">
                 <img src="work1.jpg" class="hidden">
             </div>
             <script>
-              const images = document.querySelectorAll('.circle img');
-              let currentIndex = 0;
-      
-              setInterval(() => {
-                  images[currentIndex].classList.add('hidden');
-                  currentIndex = (currentIndex + 1) % images.length;
-                  images[currentIndex].classList.remove('hidden');
-              }, 3000);
-          </script>
+                const images = document.querySelectorAll('.circle img');
+                let currentIndex = 0;
+                setInterval(() => {
+                    images[currentIndex].classList.add('hidden');
+                    currentIndex = (currentIndex + 1) % images.length;
+                    images[currentIndex].classList.remove('hidden');
+                }, 3000);
+            </script>
         </div>
     </section>
-
+ 
+    <!-- Skills Section -->
     <section class="cards" id="Skills">
-      <h2 class="title">Skills</h2>
-      <div class="cont">
-          <div class="card">
-            <div class="icon">
-              <i class="fa-solid fa-exclamation"></i>
-           </div>
-           <div class="info">
-                 <h3>Problem Solving</h3>
-                 <p>Ability to analyze issues and develop efficient and logical solutions.</p>
-           </div>
+        <h2 class="title">Skills</h2>
+        <div class="cont">
+ 
+            <!-- Technical Skills -->
+            <div class="card">
+                <div class="icon"><i class="fa-solid fa-code"></i></div>
+                <div class="info">
+                    <h3>Programming</h3>
+                    <p>Fundamentals of Java, Python, and HTML. Object-Oriented Programming and basic Data Structures.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="icon"><i class="fa-solid fa-globe"></i></div>
+                <div class="info">
+                    <h3>Networking</h3>
+                    <p>Core networking concepts: IP addressing, DNS, LAN/WAN, TCP/IP, and Packet Tracer.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="icon"><i class="fa-solid fa-shield-halved"></i></div>
+                <div class="info">
+                    <h3>Cybersecurity</h3>
+                    <p>Information security principles, cyber threat awareness, and data protection concepts.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="icon"><i class="fa-solid fa-laptop-code"></i></div>
+                <div class="info">
+                    <h3>Web Development</h3>
+                    <p>Building responsive websites using HTML, CSS, and JavaScript.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="icon"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
+                <div class="info">
+                    <h3>Data Analysis</h3>
+                    <p>Using Excel to organize, analyze, and visualize data for better decision-making.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="icon"><i class="fa-brands fa-microsoft"></i></div>
+                <div class="info">
+                    <h3>Microsoft Office</h3>
+                    <p>Proficient in Word, Excel, and PowerPoint for documentation and reporting.</p>
+                </div>
+            </div>
+ 
+            <!-- Soft Skills -->
+            <div class="card">
+                <div class="icon"><i class="fa-solid fa-exclamation"></i></div>
+                <div class="info">
+                    <h3>Problem Solving</h3>
+                    <p>Ability to analyze issues and develop efficient and logical solutions.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="icon"><i class="fa-solid fa-list-check"></i></div>
+                <div class="info">
+                    <h3>Time Management</h3>
+                    <p>Effectively prioritizing tasks and managing deadlines to ensure timely delivery.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="icon"><i class="fa-regular fa-comment"></i></div>
+                <div class="info">
+                    <h3>Communication</h3>
+                    <p>Ability to clearly convey ideas and information both verbally and in writing.</p>
+                </div>
+            </div>
+ 
         </div>
-        <div class="card">
-            <div class="icon">
-                <i class="fa-solid fa-list-check"></i>
-           </div>
-           <div class="info">
-                 <h3>Time Management</h3>
-                 <p>Effectively prioritizing tasks and managing deadlines to ensure timely delivery.</p>
-           </div>
-        </div>
-        <div class="card">
-            <div class="icon">
-                <i class="fa-brands fa-microsoft"></i>
-           </div>
-           <div class="info">
-                 <h3>Microsoft Office Tools</h3>
-                 <p>Proficient in using Word, Excel, and PowerPoint for documentation and reporting.</p>
-           </div>
-        </div>
-        <div class="card">
-            <div class="icon">
-                <i class="fa-solid fa-globe"></i>
-           </div>
-           <div class="info">
-                 <h3> Basic Networking</h3>
-                 <p>Understanding of core networking concepts such as IP addressing, DNS, LAN, and network simulation tools like Packet Tracer.</p>
-           </div>
-        </div>
-        <div class="card">
-            <div class="icon">
-                <i class="fa-solid fa-code"></i>
-           </div>
-           <div class="info">
-                 <h3>Basic Programming</h3>
-                 <p>Knowledge of fundamental programming concepts and experience with languages such as Python or JavaScript.</p>
-           </div>
-        </div>
-        <div class="card">
-            <div class="icon">
-                <i class="fa-solid fa-magnifying-glass-chart"></i>
-           </div>
-           <div class="info">
-                 <h3>Data Analysis</h3>
-                 <p>Using tools like Excel to organize, analyze, and visualize data for better decision-making.</p>
-           </div>
-        </div>
-        <div class="card">
-            <div class="icon">
-                <i class="fa-regular fa-comment"></i>
-           </div>
-           <div class="info">
-                 <h3>Communication Skills</h3>
-                 <p>Ability to clearly convey ideas and information both verbally and in writing.</p>
-           </div>
-        </div>
-        <div class="card">
-            <div class="icon">
-                <i class="fa-solid fa-laptop-code"></i>
-           </div>
-           <div class="info">
-                 <h3> Web Development</h3>
-                 <p>Designing and building responsive websites using HTML, CSS, and JavaScript.</p>
-           </div>
-        </div>
-      </div>
     </section>
-
+ 
+    <!-- Certifications Section -->
+    <section class="cards" id="certifications">
+        <h2 class="title">Certifications</h2>
+        <div class="cont">
+ 
+            <div class="card cert-card">
+                <div class="icon"><i class="fa-solid fa-shield-halved"></i></div>
+                <div class="info">
+                    <h3>Cybersecurity Fundamentals</h3>
+                    <p>IBM SkillsBuild &nbsp;·&nbsp; Sep 2025</p>
+                    <a href="https://www.credly.com/badges/258c3160-a15a-4239-99a8-a4dd11b52ba4/whatsapp" class="cert-link" target="_blank">View Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+ 
+            <div class="card cert-card">
+                <div class="icon"><i class="fa-solid fa-robot"></i></div>
+                <div class="info">
+                    <h3>Fundamentals of Artificial Intelligence</h3>
+                    <p>SDAIA &nbsp;·&nbsp; Sep 2025</p>
+                    <a href="https://www.credly.com/badges/258c3160-a15a-4239-99a8-a4dd11b52ba4/whatsapp" class="cert-link" target="_blank">View Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+ 
+            <div class="card cert-card">
+                <div class="icon"><i class="fa-solid fa-brain"></i></div>
+                <div class="info">
+                    <h3>AI Fundamentals with Capstone Project</h3>
+                    <p>IBM SkillsBuild &nbsp;·&nbsp; Aug 2025</p>
+                    <a href="https://www.credly.com/badges/6ab24559-e4ed-4935-a612-0c27865f4956/linked_in_profile?trk=public_profile_see-credential" class="cert-link" target="_blank">View Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+ 
+        </div>
+    </section>
+ 
+    <!-- Courses Section -->
+    <section class="cards" id="courses">
+        <h2 class="title">Courses</h2>
+        <div class="cont">
+ 
+            <div class="card cert-card">
+                <div class="icon"><i class="fa-solid fa-language"></i></div>
+                <div class="info">
+                    <h3>English for Tourism Program</h3>
+                    <p>Red Sea Global &nbsp;·&nbsp; Nov 2025 – May 2026</p>
+                    <a href="https://drive.google.com/file/d/1ONwgSGo8lSSKx9gvPj_DfWHmR7BDJeUc/view?usp=drivesdk" class="cert-link" target="_blank">View Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+ 
+        </div>
+    </section>
+ 
     <!-- Contact Section -->
     <section class="cards contact" id="contact">
         <h2 class="title">Let's work together</h2>
         <div class="cont">
             <div class="card">
-                <div class="icon">
-                    <i class="fas fa-phone"></i>
-                </div>
+                <div class="icon"><i class="fas fa-phone"></i></div>
                 <div class="info">
                     <h3>Phone</h3>
                     <p>+966-565336804</p>
                 </div>
             </div>
             <div class="card">
-                <div class="icon">
-                    <i class="fas fa-envelope"></i>
-                </div>
+                <div class="icon"><i class="fas fa-envelope"></i></div>
                 <div class="info">
                     <h3>Email</h3>
-                    <p>swda68059@gmail.com</p>
+                    <p>soud6804@gmail.com</p>
                 </div>
             </div>
         </div>
     </section>
-
+ 
     <!-- Footer -->
     <footer class="footer">
-        
         <p class="logo">Bin Ouda</p>
         <div class="social-icons">
-                    <a href="https://x.com/rsaaw_?s=21&t=eMqI4AxkA01QYNo_M0W0Mw"><i class="fa-brands fa-x-twitter" style="color: black;"></i></a>
-                    <a href="https://www.linkedin.com/in/saud-al-balawi-238258340?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><i class="fab fa-linkedin" style="color: rgb(0, 34, 255);"></i></a>
-                    <a href="https://www.tiktok.com/@rsaw_?_t=8sSuHXWIo78&_r=1"><i class="fa-brands fa-tiktok" style="color: rgb(189, 171, 171);"></i></a>
-               
+            <a href="https://www.linkedin.com/in/saud-al-balawi-238258340" title="LinkedIn">
+                <i class="fab fa-linkedin" style="color: rgb(0, 119, 181);"></i>
+            </a>
         </div>
     </footer>
+ 
 </body>
 </html>
