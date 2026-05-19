@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
-
+ 
 * {
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -7,7 +7,7 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
-
+ 
 /* Header Styles */
 header {
     background-color: rgb(99, 96, 89);
@@ -19,7 +19,7 @@ header {
     align-items: center;
     padding: 10px 200px;
 }
-
+ 
 .logo {
     text-decoration: none;
     color: rgb(254, 153, 1);
@@ -27,7 +27,7 @@ header {
     font-weight: 700;
     font-size: 2em;
 }
-
+ 
 .navigation a {
     color: rgb(254, 100, 1);
     text-decoration: none;
@@ -35,11 +35,11 @@ header {
     font-weight: 400;
     padding-left: 40px;
 }
-
+ 
 .navigation a:hover {
     color: rgb(42, 83, 42);
 }
-
+ 
 /* Main Section Styles */
 .main {
     width: 100%;
@@ -47,40 +47,37 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color:rgb(53, 57, 59);
+    background-color: rgb(53, 57, 59);
     padding: 100px 200px;
 }
-
+ 
 .content {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
 }
-
-
-
- h2 {
+ 
+h2 {
     color: aliceblue;
     font-size: 2em;
     font-weight: 500;
     margin-bottom: 20px;
 }
-
- h2 span {
-    color:rgb(248, 139, 5);
+ 
+h2 span {
+    color: rgb(248, 139, 5);
     font-size: 4rem;
     display: inline-block;
     font-weight: 600;
-    
 }
-
- h3 {
+ 
+h3 {
     color: #fff;
     font-weight: 700;
     margin-bottom: 20px;
 }
-
+ 
 .main-btn {
     color: floralwhite;
     text-decoration: none;
@@ -91,28 +88,27 @@ header {
     font-weight: 600;
     padding: 1em 3em;
     margin-top: 30px;
-    margin-left: 25PX;
+    margin-left: 25px;
     transition: 0.6s ease;
 }
-
+ 
 .main-btn:hover {
     background-color: bisque;
     transform: scale(1.1);
 }
-
+ 
 .social-icons {
     display: flex;
-    justify-content: flex-start; 
-    gap: 90px; 
+    justify-content: flex-start;
+    gap: 90px;
     margin-top: 10px;
     font-size: 3rem;
 }
-
+ 
 .social-icons a:hover {
     color: black;
-    transform: scale(1.1);
 }
-
+ 
 /* Circle Image Styles */
 .circle {
     width: 400px;
@@ -122,7 +118,7 @@ header {
     border: 2px solid rgb(99, 96, 89);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-
+ 
 .circle img {
     width: 100%;
     height: 100%;
@@ -130,185 +126,191 @@ header {
     position: absolute;
     transition: opacity 1s ease-in-out;
 }
-
+ 
 .circle img.hidden {
     opacity: 0;
 }
-
-/* services */
-
-.cards{
+ 
+/* Cards / Sections */
+.cards {
     background-color: rgb(149, 149, 104);
     padding-top: 5rem;
-
+    padding-bottom: 4rem;
 }
-
-.title{
+ 
+.title {
     display: flex;
     justify-content: center;
-    color:  rgb(254, 160, 1);
+    color: rgb(254, 160, 1);
     font-size: 2.2em;
     font-weight: 800;
     margin-bottom: 30px;
-   
 }
-
-.cont{
-     display: flex;
-     justify-content: center;
+ 
+.cont {
+    display: flex;
+    justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
 }
-
-.card{
+ 
+.card {
     background-color: #111010;
     width: 21em;
-    box-shadow: 0 5px 25px rgba(1 1 1);
+    box-shadow: 0 5px 25px rgba(1, 1, 1, 1);
     border-radius: 10px;
     padding: 25px;
     margin: 15px;
     transition: 0.7s ease;
-
 }
-
-.card:hover{
+ 
+.card:hover {
     transform: scale(1.1);
 }
-
-.icon{
-    color:  rgb(254, 100, 1);
+ 
+.icon {
+    color: rgb(254, 100, 1);
     font-size: 8em;
     text-align: center;
 }
-.info{
+ 
+.info {
     text-align: center;
 }
-.info h3{
+ 
+.info h3 {
     color: rgb(254, 100, 1);
     font-size: 1.2em;
     font-weight: 700;
     margin: 10px;
 }
-.info p{
+ 
+.info p {
     color: #fff;
 }
-
-
-.contact{
+ 
+/* Certification & Course Cards */
+.cert-card .icon {
+    font-size: 5em;
+}
+ 
+.cert-link {
+    display: inline-block;
+    margin-top: 14px;
+    color: rgb(254, 160, 1);
+    text-decoration: none;
+    font-size: 0.85em;
+    font-weight: 600;
+    border: 1px solid rgb(254, 160, 1);
+    padding: 5px 14px;
+    border-radius: 20px;
+    transition: 0.3s ease;
+}
+ 
+.cert-link:hover {
+    background-color: rgb(254, 160, 1);
+    color: #111;
+}
+ 
+/* Contact Section */
+.contact {
     padding-top: 7rem;
     padding-bottom: 3rem;
 }
-
-.contact .icon{
-    
+ 
+.contact .icon {
     background-color: #fff;
     font-size: 4.5em;
 }
-
+ 
 .contact .info h3 {
     color: #8b5e5e;
 }
-
+ 
 .contact .info p {
     font-size: 1.5em;
 }
-
+ 
+/* Footer */
 .footer {
     background-color: #3a3a45;
     color: #fff;
-    padding: 0.5em;
+    padding: 0.5em 2em;
     display: flex;
     justify-content: space-between;
-}
-
-
-
-
-.footer .social-icons a{
     align-items: center;
-    justify-content: center;
 }
-
-@media (max-width:1023px){
-    header{
+ 
+.footer .social-icons {
+    gap: 20px;
+    font-size: 2rem;
+    margin-top: 0;
+}
+ 
+/* Responsive */
+@media (max-width: 1023px) {
+    header {
         padding: 12px 20px;
     }
-
-    .navigation a{
+ 
+    .navigation a {
         padding-left: 10px;
-    }
-
-    .title{
-        font-size: 1.8em;
-    }
-
-    section{
-        padding: 80px 20px;
-    }
-
-    .main-content h2{
         font-size: 1em;
     }
-
-    .main-content h3{
-        font-size: 1.6em;
+ 
+    .title {
+        font-size: 1.8em;
     }
-
-    .content{
+ 
+    section {
+        padding: 80px 20px;
+    }
+ 
+    .content {
         flex-direction: column;
         align-items: center;
     }
+ 
     .social-icons {
         display: flex;
         justify-content: center;
         gap: 15px;
         margin-top: 10px;
     }
-
-
-    
-
 }
-
-@media (max-width:641px){
-    body{
-        font-size: 12px;
-    }
-
-    .main-content h2{
-        font-size: 0.8em;
-    }
-
-    .main-content h3{
-        font-size: 1.4em;
-    }
-}
-
-@media (max-width:300px){
-    body{
-        font-size: 10px;
-     
-    }
-}@media (max-width: 768px) {
+ 
+@media (max-width: 768px) {
     .circle {
-        display: none; /* إخفاء الصورة عند الشاشات الصغيرة */
+        display: none;
     }
-
+ 
     .footer {
-        flex-direction: column; /* ترتيب الشريط السفلي عمودي */
+        flex-direction: column;
         align-items: center;
         text-align: center;
     }
-
+ 
     .footer .social-icons {
         display: flex;
         justify-content: center;
         gap: 15px;
         margin-top: 10px;
     }
-
+ 
     .footer .social-icons a {
         padding-right: 0;
         font-size: 1.8em;
+    }
+}
+ 
+@media (max-width: 641px) {
+    body {
+        font-size: 12px;
+    }
+}
+ 
+@media (max-width: 300px) {
+    body {
+        font-size: 10px;
     }
 }
